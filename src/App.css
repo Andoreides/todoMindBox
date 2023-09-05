@@ -19,7 +19,7 @@
   border: 1px solid #ccc;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 37px;
-  /*width: 300px;*/
+  width: 454px;
   padding: 10px;
   cursor: pointer;
   align-items: center;
@@ -40,6 +40,9 @@
   font-size: 20px;
   margin: 8px auto 5px 12px;
   color: #777777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .done {
@@ -87,3 +90,58 @@
   padding: 3px 0 0 35px
 }
 
+
+@media screen and (max-width: 700px) {
+  .todos__title{
+    font-size: 60px;
+  }
+  .todos__input {
+    width: 370px;
+    font-size: 25px;
+  }
+  .todos__content {
+    width: 390px;
+  }
+  .todos__subtitle{
+    font-size: 18px;
+    margin-left: 6px;
+  }
+  .todos__control {
+    width: 390px;
+  }
+  .label__paragraph{
+    padding: 3px 0 0 3px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .todos__title{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .todos__input {
+    width: 270px;
+    font-size: 20px;
+  }
+  .todos__input::placeholder {
+    font-size: 25px;
+  }
+  .todos__content {
+    width: 290px;
+  }
+  .todos__subtitle{
+    font-size: 14px;
+    margin: 12px auto 0 6px;
+  }
+  .todos__control {
+    width: 290px;
+  }
+  .label__paragraph{
+    font-size: 12px;
+    padding: 5px 0 0 8px;
+  }
+  .label__container{
+    padding-left: 20px;
+    font-size: 12px;
+  }
+}
